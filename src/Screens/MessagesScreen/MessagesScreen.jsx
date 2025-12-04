@@ -3,6 +3,8 @@ import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
 import { useParams } from 'react-router'
 import { useState } from 'react'
 import { getContactById } from '../../Services/ContactService'
+import LeftSidebar from '../../Components/LeftSidebar/LeftSidebar'
+import './MessagesScreen.css'
 
 export default function MessagesScreen() {
     const parametros_url = useParams();
@@ -28,7 +30,8 @@ export default function MessagesScreen() {
 
     console.log(parametros_url.contact_id);
     return (
-        <div>
+        <div className='messages-screen-container'>
+            <LeftSidebar />
             <ContactSidebar />
             {
                 loadingContact ? 
