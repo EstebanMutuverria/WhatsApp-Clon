@@ -1,0 +1,44 @@
+.csf-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    background-color: #f6f6f6;
+    border-radius: 30px;
+}
+
+.csf-container:hover{
+    border: 1px grey solid;
+}
+
+.csf-container:focus-within{
+    outline: none;             
+    border: 1px solid rgb(81,171,97);  
+    box-shadow: 0 0 0 1px rgb(81,171,97); 
+    background-color: white;
+}
+.csf-search-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    padding: 3px 10px;
+}
+
+.csf-input{
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    outline: none;
+    width: 100%;
+}
+
+.csf-input:hover{
+    cursor: text;
+}
+
+.csf-search-icon{
+    color: gray;
+}

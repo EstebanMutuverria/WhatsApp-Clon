@@ -1,0 +1,27 @@
+.filters-container {
+    display: flex;
+    gap: 6px;
+    padding: 8px 12px;
+    background-color: white;
+}
+
+.filter-btn {
+    padding: 6px 12px;
+    border-radius: 20px;
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.filter-btn:hover {
+    background-color: rgb(246,245,244);
+}
+
+.filter-btn.active {
+    background-color: rgb(217,253,211);
+    font-weight: 600;
+    color:rgb(53,96,63)
+}

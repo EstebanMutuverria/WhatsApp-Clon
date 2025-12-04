@@ -1,0 +1,13 @@
+import contact_data from "../Data/ContactData";
+export function getContactList(){
+    /* En un futuro esta funcion haria una llamada al servidor  */
+    return contact_data;
+}
+
+export function getContactById (contact_id) {
+    for(const contact of contact_data){
+        if(Number(contact.contact_id) === Number(contact_id)){
+            return contact
+        }
+    }
+}
