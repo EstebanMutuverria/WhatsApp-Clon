@@ -7,6 +7,18 @@
     border: none;
     flex-direction: row;
     border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.chat-container:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+.chat-container:focus-within{
+    background-color: rgb(246,245,244);
 }
 
 .img_avatar{
@@ -43,11 +55,6 @@
     font-size: 0.8em;
     color: gray;
     gap: 10px;
-}
-
-.chat-container:hover{
-    background-color: #f0f0f0;
-    cursor: pointer;
 }
 
 .unseen-messages-number{

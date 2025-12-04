@@ -5,10 +5,13 @@
     padding: 5px 10px;
     background-color: #f6f6f6;
     border-radius: 30px;
+    transition: all 0.2s ease-in-out;
 }
 
 .csf-container:hover{
     border: 1px grey solid;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
 }
 
 .csf-container:focus-within{
@@ -16,6 +19,7 @@
     border: 1px solid rgb(81,171,97);  
     box-shadow: 0 0 0 1px rgb(81,171,97); 
     background-color: white;
+    transition: all 0.2s ease-in-out;
 }
 .csf-search-box{
     width: 100%;

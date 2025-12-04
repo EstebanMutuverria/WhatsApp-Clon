@@ -18,6 +18,8 @@
 
 .filter-btn:hover {
     background-color: rgb(246,245,244);
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
 }
 
 .filter-btn.active {
