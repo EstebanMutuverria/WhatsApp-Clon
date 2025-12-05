@@ -4,8 +4,8 @@ const contact_data = [
         contact_name : "Lionel Messi",
         contact_avatar: "https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg",
         contact_unseen_messages : 2,
-        contact_last_message_content : "Hola, como estas?",
-        contact_last_message_state : "RECEIVED", // NOT-SENDED | NOT-RECEIVED | RECEIVED | SEEN
+        contact_last_message_content : "como estas?",
+        contact_last_message_state : "", // NOT-SENDED | NOT-RECEIVED | RECEIVED | SEEN
         /* contact_last_message_date: new Date() */
     },
         {
@@ -23,7 +23,7 @@ const contact_data = [
         contact_avatar: "https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg",
         contact_unseen_messages : 0,
         contact_last_message_content : "Buenass",
-        contact_last_message_state : "SEEN", // NOT-SENDED | NOT-RECEIVED | RECEIVED | SEEN
+        contact_last_message_state : "NOT-RECEIVED", // NOT-SENDED | NOT-RECEIVED | RECEIVED | SEEN
         /* contact_last_message_date: new Date() */
     },
     {
@@ -50,7 +50,7 @@ const contact_data = [
         contact_avatar: "https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg",
         contact_unseen_messages : 0,
         contact_last_message_content : "Buenass",
-        contact_last_message_state : "SEEN", // NOT-SENDED | NOT-RECEIVED | RECEIVED | SEEN
+        contact_last_message_state : "NOT-RECEIVED", // NOT-SENDED | NOT-RECEIVED | RECEIVED | SEEN
         /* contact_last_message_date: new Date() */
     },
     {
