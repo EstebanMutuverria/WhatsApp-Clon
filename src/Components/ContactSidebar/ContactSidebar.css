@@ -7,13 +7,13 @@
     background-color: rgb(255,255,255);
     padding: 0px 10px;
     gap: 8px;
-    margin-top: 20PX;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
 .contact-header-sidebar-logo{
