@@ -31,3 +31,5 @@ const ThemeContextProvider = ({ children }) => {
         </ThemeContext.Provider>
     )
 }
+
+export default ThemeContextProvider
