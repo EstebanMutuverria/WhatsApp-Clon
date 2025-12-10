@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './ContactList.css'
 import { Link } from 'react-router'
+import { ContactListContext } from '../../Contexts/ContactListContext';
 
 function formatMessageState(state){
     if(state === 'SEEN'){
@@ -14,8 +15,9 @@ function formatMessageState(state){
     }   
 }
 
-export default function ContactList(props) {
-    if(props.loadingContactState){
+export default function ContactList() {
+    const{contactState, loadingContactState} = useContext(ContactListContext)
+    if(loadingContactState){
         return (
             <div>Cargando contactos...</div>
         )
@@ -24,10 +26,10 @@ export default function ContactList(props) {
     return (
         <div>
             {
-                props.contactState.map(
+                contactState.map(
                     function(contact){
                         return (
-                            <Link to={'/chat/'+ contact.contact_id} key={contact.contact_id} className='chat-container'> 
+                            <Link to={'/chat/'+ contact.contact_id + '/messages'} key={contact.contact_id} className='chat-container'> 
                                 <div>
                                     <img className='img_avatar' src={contact.contact_avatar} alt={contact.contact_name} width="50" />
                                 </div>
