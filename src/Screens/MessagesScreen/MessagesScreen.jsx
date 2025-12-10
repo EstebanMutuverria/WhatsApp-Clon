@@ -1,34 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useContext} from 'react'
 import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
-import { useParams } from 'react-router'
-import { useState } from 'react'
-import { getContactById } from '../../Services/ContactService'
 import LeftSidebar from '../../Components/LeftSidebar/LeftSidebar'
 import './MessagesScreen.css'
+import {ContactDetailContext} from '../../Contexts/ContactDetailContext'
 
 export default function MessagesScreen() {
-    const parametros_url = useParams();
-    const contact_id = parametros_url.contact_id;
-    const [contactSelected, setContactSelected] = useState(null);
-    const [loadingContact, setLoadingContact] = useState(true);
-
-    function loadContactById(){
-        setLoadingContact(true);
-        //Simulamos la carga con un setTimeout
-        setTimeout(
-            function(){
-                const contact = getContactById(contact_id)
-                setContactSelected(contact);
-                setLoadingContact(false);
-            },
-            2000
-        )
-    }
-    useEffect(loadContactById, [parametros_url.contact_id])
-
+    const {loadingContact, contactSelected} = useContext(ContactDetailContext);
     console.log(loadingContact, contactSelected);
-
-    console.log(parametros_url.contact_id);
     return (
         <div className='messages-screen-container'>
             <LeftSidebar />
