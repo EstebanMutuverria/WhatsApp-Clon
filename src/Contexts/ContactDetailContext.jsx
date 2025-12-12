@@ -36,7 +36,7 @@ const ContactDetailContextProvider = () =>{
             message_id: contactSelected.messages.length + 1,
             message_content: content,
             message_state: 'NOT-SENDED',
-            message_date: new Date().toLocaleString()
+            message_date: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }
 
         setContactSelected({
