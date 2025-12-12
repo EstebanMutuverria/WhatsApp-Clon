@@ -19,7 +19,7 @@ export default function ContactScreen() {
   if (loading) {
     return (
       <div className="loader-overlay">
-        <img src="./cargando/grey-9026.gif" alt="Cargando..." />
+        <img src="https://cdn.pixabay.com/animation/2023/11/09/03/05/03-05-45-320_512.gif" alt="Cargando..." />
       </div>
     )
   }

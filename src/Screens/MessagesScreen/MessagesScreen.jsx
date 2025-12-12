@@ -16,7 +16,7 @@ export default function MessagesScreen() {
             {
                 loadingContact ? 
                 <div className='loader-chats'>
-                    <img src='../../cargando/grey-9026.gif' alt='Cargando contacto...'></img>
+                    <img src='https://cdn.pixabay.com/animation/2023/11/09/03/05/03-05-45-320_512.gif' alt='Cargando contacto...'></img>
                 </div>
                 : 
                 <div className='messages-screen-chat-content'>
