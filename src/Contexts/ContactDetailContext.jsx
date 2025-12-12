@@ -27,8 +27,24 @@ const ContactDetailContextProvider = () =>{
     const providerValues = {
         contactSelected,
         loadingContact,
-        loadContactById
+        loadContactById,
+        addNewMessage
     }
+
+    function addNewMessage(content){
+        const newMessage = {
+            message_id: contactSelected.messages.length + 1,
+            message_content: content,
+            message_state: 'NOT-SENDED',
+            message_date: new Date().toLocaleString()
+        }
+
+        setContactSelected({
+            ...contactSelected,
+            messages: [...contactSelected.messages, newMessage]
+        });
+    }
+
     return (
         <ContactDetailContext.Provider value={providerValues}>
             <Outlet/>
