@@ -16,13 +16,7 @@ function formatMessageState(state){
 }
 
 export default function ContactList() {
-    const{contactState, loadingContactState} = useContext(ContactListContext)
-    if(loadingContactState){
-        return (
-            <div>Cargando contactos...</div>
-        )
-
-    }
+    const{contactState} = useContext(ContactListContext)
     return (
         <div>
             {
@@ -41,7 +35,9 @@ export default function ContactList() {
                                     </div>
                                 </div>
                                 <div className='chat-last'>
-                                    <span>{contact.contact_last_message_date} ayer</span>
+                                    {
+                                        contact.contact_last_message_date === new Date().toLocaleDateString() ? <span>hoy</span> : <span>{contact.contact_last_message_date}</span>
+                                    }
                                     {
                                         contact.contact_unseen_messages > 0 &&
                                         <span className='unseen-messages-number'>{contact.contact_unseen_messages}</span>
