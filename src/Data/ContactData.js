@@ -35,17 +35,17 @@ const contact_data = [
         messages: [
             {
                 message_id : 1,
-                message_content : "Buenass",
+                message_content : "Hola, buen dia!",
                 message_state : "RECEIVED", // NOT-SENDED | NOT-RECEIVED | RECEIVED | SEEN
                 message_date: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
                 send_by_me: false
             },
             {
                 message_id : 2,
-                message_content : "Como estas?",
-                message_state : "RECEIVED", // NOT-SENDED | NOT-RECEIVED | RECEIVED | SEEN
+                message_content : "Buenass",
+                message_state : "SEEN", // NOT-SENDED | NOT-RECEIVED | RECEIVED | SEEN
                 message_date: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-                send_by_me: false
+                send_by_me: true
             },
         ]
     },
