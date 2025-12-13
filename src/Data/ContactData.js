@@ -126,7 +126,7 @@ const contact_data = [
     },
     {
         contact_id : 6,
-        contact_name : "Contacto 5",
+        contact_name : "Contacto 6",
         contact_avatar: "https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg",
         contact_unseen_messages : 0,
         contact_last_message_content : "Buenass",
@@ -151,7 +151,7 @@ const contact_data = [
     },
     {
         contact_id : 7,
-        contact_name : "Contacto 5",
+        contact_name : "Contacto 7",
         contact_avatar: "https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg",
         contact_unseen_messages : 0,
         contact_last_message_content : "Buenass",
@@ -176,7 +176,7 @@ const contact_data = [
     },
     {
         contact_id : 8,
-        contact_name : "Contacto 5",
+        contact_name : "Contacto 8",
         contact_avatar: "https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg",
         contact_unseen_messages : 0,
         contact_last_message_content : "Buenass",
@@ -201,7 +201,7 @@ const contact_data = [
     },
     {
         contact_id : 9,
-        contact_name : "Contacto 5",
+        contact_name : "Contacto 9",
         contact_avatar: "https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg",
         contact_unseen_messages : 0,
         contact_last_message_content : "Buenass",
@@ -226,7 +226,7 @@ const contact_data = [
     },
     {
         contact_id : 10,
-        contact_name : "Contacto 5",
+        contact_name : "Contacto 10",
         contact_avatar: "https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg",
         contact_unseen_messages : 0,
         contact_last_message_content : "Buenass",
