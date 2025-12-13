@@ -90,6 +90,7 @@
     max-width: 50%;
     justify-content: space-between;
     width:fit-content;
+    max-width: fit-content;
     font-size: 13px;
 }
 
