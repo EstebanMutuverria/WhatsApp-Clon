@@ -1,16 +1,82 @@
-# React + Vite
+# 💬 React Chat App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de chat desarrollada en **React** que simula el funcionamiento de una app de mensajería moderna (estilo WhatsApp), utilizando **Context API** para el manejo de estado global y **React Router** para la navegación entre contactos y conversaciones.
 
-Currently, two official plugins are available:
+El proyecto está orientado a **práctica y aprendizaje**, enfocado en arquitectura de componentes, manejo de estados, renderizado condicional y estilos con CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Demo
+https://whats-app-clon-psi.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ **React**
+- 🌐 **React Router DOM**
+- 🧠 **Context API**
+- 🎨 **CSS puro**
+- 🧩 **Componentes funcionales**
+- 🕒 Simulación de carga de datos (loader)
+
+---
+
+## ✨ Funcionalidades
+
+✔ Listado de contactos  
+✔ Navegación entre chats por ID  
+✔ Simulación de carga de datos (loader)  
+✔ Visualización de mensajes  
+✔ Envío de mensajes nuevos  
+✔ Diferenciación entre mensajes enviados y recibidos  
+✔ Estados de mensaje (enviado, recibido, visto)  
+✔ Burbujas de chat con estilo tipo WhatsApp  
+✔ Uso de Context API para evitar prop drilling  
+
+---
+
+## 🧠 Manejo de estado
+
+El proyecto utiliza **Context API** para:
+
+- Gestionar la lista de contactos
+- Manejar el contacto seleccionado
+- Simular carga de datos
+- Agregar nuevos mensajes al chat activo
+
+Esto permite una arquitectura más limpia y escalable.
+
+---
+
+## 🎨 UI / UX
+
+- Diseño responsive
+- Burbujas de chat alineadas según emisor
+- Indicadores visuales de estado del mensaje
+- Loader de pantalla completa simulando conexión a servidor
+
+---
+
+📌 Objetivo del proyecto
+Este proyecto fue desarrollado con fines educativos para:
+
+Practicar React
+
+Entender Context API
+
+Manejar estado global
+
+Mejorar lógica de componentes
+
+Aplicar estilos complejos con CSS
+
+Simular comportamiento real de una app de chat
+
+👤 Autor
+Esteban Mutuverria
+📍 Argentina
+💻 Técnico Universitario en Programación
+
+📄 Licencia
+Este proyecto se publica con fines educativos y de práctica.
