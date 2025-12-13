@@ -2,19 +2,104 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 10px;
+    padding: 7px 10px;
     border-radius: 25px;
     background-color: white;
-    position: fixed;
-    bottom: 0px;
-    width: 65%;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
     box-shadow: 0px -18px 7px -17px rgba(0,0,0,0.1);
     z-index: 9999;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .icons-adjuntar-stickers-container{
     display: flex;
     gap: 10px;
+}
+
+.icons-adjuntar-stickers-container i{
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out
+}
+
+.icons-adjuntar-stickers-container i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    background-color: #f0f0f0;
+}
+
+
+.text-area {
+    border: none;
+    width: 100%;
+    flex: 1;
+    resize: none;
+    outline: none;
+
+    text-align: left;
+    align-self: center;
+
+    font-size: 16px;
+    max-height: 240px;
+    padding: 5px 10px;
+
+    height: 36px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.form-btn-submit{
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(81,171,97);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-btn-submit:hover{
+    color: white;
+    background-color: rgb(81,171,140);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-btn-submit-mic{
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-btn-submit-mic:hover{
+    color: white;
+    background-color: rgb(81,171,140);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
 }
