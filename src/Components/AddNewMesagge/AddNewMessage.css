@@ -1,3 +1,12 @@
+.add-new-message-container{
+    background-image: url("https://i.pinimg.com/736x/43/f9/f1/43f9f1819ed585ca5f0096b4aa997e7a.jpg");
+    background-size: cover;          /* que la imagen ocupe todo */
+    background-repeat: no-repeat;    /* que no se repita */
+    background-position: center;     /* centrada */
+    overflow-y: none;                /* scroll de mensajes */
+    padding: 0px 20px;
+}
+
 .add-new-message-form-container{
     display: flex;
     align-items: center;
@@ -5,10 +14,6 @@
     padding: 7px 10px;
     border-radius: 25px;
     background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
     box-shadow: 0px -18px 7px -17px rgba(0,0,0,0.1);
     z-index: 9999;
     margin-bottom: 15px;
