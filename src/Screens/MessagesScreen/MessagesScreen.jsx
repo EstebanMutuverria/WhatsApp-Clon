@@ -21,9 +21,7 @@ export default function MessagesScreen() {
                 : 
                 <div className='messages-screen-chat-content'>
                     <ChatContent />
-                    <div className='messages-screen-chat-form'>
-                        <AddNewMessage />
-                    </div>
+                    <AddNewMessage />
                 </div>
             }
         </div>
