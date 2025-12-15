@@ -99,7 +99,7 @@
 .message-container{
     display: flex;
     flex-direction: row;
-    gap: 3px;
+    gap: 5px;
     align-items: flex-end;
     padding: 7px 12px;
     background-color: white;
@@ -126,7 +126,7 @@
     display: flex;
     flex-direction: row;
     gap: 3px;
-    color: #555;
+    color: #8d8c8c;
     font-size: 12px;
     margin-bottom: -5px;
 }
