@@ -33,7 +33,7 @@ function ChatContent() {
       {contactSelected.messages.map((message) => (
         <div className={message.send_by_me ? "send_by_me_container" : ""}>
           <div key={message.message_id} className={message.send_by_me ? "message-container send_by_me" : "message-container"}>
-            <span>{message.message_content}</span>
+            <span className='message-content'>{message.message_content}</span>
             <div className='message-date-and-state'>
               <span>{message.message_date}</span>
               {
