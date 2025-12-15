@@ -1,8 +1,5 @@
 .add-new-message-container{
-    background-image: url("https://i.pinimg.com/736x/43/f9/f1/43f9f1819ed585ca5f0096b4aa997e7a.jpg");
-    background-size: cover;          /* que la imagen ocupe todo */
-    background-repeat: no-repeat;    /* que no se repita */
-    background-position: center;     /* centrada */
+    background-color: rgb(208,208,208);
     overflow-y: none;                /* scroll de mensajes */
     padding: 0px 20px;
 }
