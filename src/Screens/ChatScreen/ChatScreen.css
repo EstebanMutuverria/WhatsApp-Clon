@@ -1,4 +1,4 @@
-.chat-screen-container{
+.chat-screen-container {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -28,4 +28,47 @@
     font-size: 18px;
     color: #333;
     font-weight: 500;
+}
+
+.chat-screen-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 50px;
+}
+
+.chat-screen-welcome-upper-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.chat-screen-welcome-upper-content h1 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #333;
+}
+
+.chat-screen-welcome-upper-content p {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.chat-screen-welcome-upper-content img {
+    width: 250px;
+    height: auto;
+}
+
+.chat-screen-welcome-lock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #444;
 }
