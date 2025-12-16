@@ -4,7 +4,7 @@ import LeftSidebar from '../../Components/LeftSidebar/LeftSidebar'
 import './ChatScreen.css'
 import { ContactDetailContext } from '../../Contexts/ContactDetailContext'
 
-export default function ContactScreen() {
+export default function ChatScreen() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
