@@ -1,4 +1,4 @@
-const contact_data = [
+let contact_data = [
     {
         contact_id : 1,
         contact_name : "Contacto 1",
