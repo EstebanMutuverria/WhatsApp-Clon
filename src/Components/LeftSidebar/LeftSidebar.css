@@ -1,17 +1,18 @@
-.left-sidebar-container{
+.left-sidebar-container {
     height: 100%;
-    width: 72px;
-    background-color: rgb(247,245,243);
+    width: 70px;
+    min-width: 70px;
+    background-color: rgb(247, 245, 243);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
     padding-bottom: 20px;
 }
 
-.top-icons{
+.top-icons {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -20,7 +21,7 @@
     align-items: center;
 }
 
-.bottom-icons{
+.bottom-icons {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -29,34 +30,40 @@
     align-items: center;
 }
 
-.icon-container{
+.icon-container {
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
     cursor: pointer;
     padding: 10px;
     border-radius: 8px;
     transition: background-color 0.3s, box-shadow 0.3s;
     color: grey;
-    border:none;
+    border: none;
     background-color: transparent;
+    height: 50px;
+    width: 50px;
 }
-.icon-container:hover{
+
+.icon-container:hover {
     background-color: rgb(230, 228, 226);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.icon-container-active{
+
+.icon-container-active {
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
     cursor: pointer;
     padding: 10px;
     border-radius: 8px;
     transition: background-color 0.3s, box-shadow 0.3s;
     background-color: rgb(200, 200, 200);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     color: black;
     border: none;
+    height: 50px;
+    width: 50px;
 }
 
 .icon-container img {
