@@ -16,17 +16,10 @@ export default function MessagesScreen() {
         <div className='messages-screen-container'>
             <LeftSidebar />
             <ContactSidebar />
-            {
-                loadingContactState ?
-                    <div className='loader-chats'>
-                        <img src='https://cdn.pixabay.com/animation/2023/11/09/03/05/03-05-45-320_512.gif' alt='Cargando contacto...'></img>
-                    </div>
-                    :
-                    <div className='messages-screen-chat-content'>
-                        <ChatContent />
-                        <AddNewMessage />
-                    </div>
-            }
+            <div className='messages-screen-chat-content'>
+                <ChatContent />
+                <AddNewMessage />
+            </div>
         </div>
     )
 }
