@@ -1,7 +1,19 @@
 import './ContactSearchForm.css'
-
+import { useContext, useState } from 'react'
+import { ContactListContext } from '../../Contexts/ContactListContext'
 
 export default function ContactSearchForm() {
+    const { filterContacts } = useContext(ContactListContext)
+
+    function handleSearchChange(e) {
+        const query = e.target.value.toLowerCase()
+        filterContacts(query)
+    }
+
+    function outSearch(e) {
+        e.target.value = ''
+    }
+
 
     return (
         <div className="csf-container">
@@ -14,6 +26,8 @@ export default function ContactSearchForm() {
                     className="csf-input"
                     type="text"
                     placeholder="Buscar un chat o iniciar uno nuevo"
+                    onChange={handleSearchChange}
+                    onBlur={outSearch}
                 />
             </div>
             <img className="csf-filter-icon" />
