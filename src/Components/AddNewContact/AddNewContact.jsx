@@ -8,9 +8,7 @@ const AddNewContact = ({ onClose }) => {
     function onFormSubmit(event) {
         event.preventDefault();
         const nombre = event.target.nombre.value;
-        const apellido = event.target.apellido.value;
-        const telefono = event.target.telefono.value;
-        if (nombre.trim() === '' || apellido.trim() === '' || telefono.trim() === '') return;
+        if (nombre.trim() === '') return;
         addNewContact(nombre);
         onClose();
     }
