@@ -22,7 +22,10 @@ function ChatContent() {
 
   useEffect(() => {
     scrollToBottom()
-  }, [contactSelected.messages])
+  }, [contactSelected?.messages])
+
+  if (!contactSelected) return null
+
 
   function formatMessageState(state) {
     if (state === 'SEEN') {
