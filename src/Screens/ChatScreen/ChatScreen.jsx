@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
 import LeftSidebar from '../../Components/LeftSidebar/LeftSidebar'
 import './ChatScreen.css'
-import { ContactDetailContext } from '../../Contexts/ContactDetailContext'
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ChatScreen() {
   const [loading, setLoading] = useState(true)
@@ -19,7 +19,15 @@ export default function ChatScreen() {
   if (loading) {
     return (
       <div className="loader-overlay">
-        <img src="https://cdn.pixabay.com/animation/2023/11/09/03/05/03-05-45-320_512.gif" alt="Cargando..." />
+        <FaWhatsapp className='loader-whatsapp-icon' />
+        <h2 className='loader-title'>WhatsApp</h2>
+        <div className='loader-progress-container'>
+          <div className='loader-progress-bar'></div>
+        </div>
+        <div className='loader-encryption-notice'>
+          <i><svg viewBox="0 0 24 24" height="12" width="12" preserveAspectRatio="xMidYMid meet" fill="none"><title>lock-solid</title><path d="M12 2C9.5 2 7.2 3.2 5.8 5.4C5.2 6.2 5 7.1 5 8V10C5 10.6 5.4 11 6 11H18C18.6 11 19 10.6 19 10V8C19 6 16.5 2 12 2ZM9 8C9 6.3 10.3 5 12 5C13.7 5 15 6.3 15 8H9ZM6 12C5.4 12 5 12.4 5 13V20C5 20.6 5.4 21 6 21H18C18.6 21 19 20.6 19 20V13C19 12.4 18.6 12 18 12H6Z" fill="currentColor"></path></svg></i>
+          <span>Cifrado de extremo a extremo</span>
+        </div>
       </div>
     )
   }
