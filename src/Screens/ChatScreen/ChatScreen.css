@@ -83,6 +83,12 @@
     gap: 50px;
 }
 
+@media (max-width: 768px) {
+    .chat-screen-welcome {
+        display: none;
+    }
+}
+
 .chat-screen-welcome-upper-content {
     display: flex;
     flex-direction: column;

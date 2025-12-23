@@ -198,3 +198,22 @@
     border-left: none;
     border-right: 10px solid transparent;
 }
+
+.btn-responsive {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header-contact-buttons {
+        display: none;
+    }
+
+    .btn-responsive {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+    }
+
+}

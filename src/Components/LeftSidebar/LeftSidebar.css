@@ -12,6 +12,12 @@
     padding-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .left-sidebar-container {
+        display: none;
+    }
+}
+
 .top-icons {
     display: flex;
     flex-direction: column;
