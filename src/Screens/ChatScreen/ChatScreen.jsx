@@ -1,22 +1,17 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { useLocation } from 'react-router'
 import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
 import LeftSidebar from '../../Components/LeftSidebar/LeftSidebar'
 import './ChatScreen.css'
 import { FaWhatsapp } from "react-icons/fa";
 
+import { ContactListContext } from '../../Contexts/ContactListContext'
+
 export default function ChatScreen() {
-  const [loading, setLoading] = useState(true)
+  const { loadingContactState } = useContext(ContactListContext)
+  const location = useLocation()
 
-  useEffect(() => {
-    // Simula llamada al servidor
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 2000)
-
-    return () => clearTimeout(timer)
-  }, [])
-
-  if (loading) {
+  if (loadingContactState) {
     return (
       <div className="loader-overlay">
         <FaWhatsapp className='loader-whatsapp-icon' />
