@@ -11,7 +11,7 @@ export default function MessagesScreen() {
     const { contactSelected } = useContext(ContactDetailContext);
     console.log(contactSelected);
 
-    const { loadingContactState } = useContext(ContactListContext);
+
     return (
         <div className='messages-screen-container'>
             <LeftSidebar />

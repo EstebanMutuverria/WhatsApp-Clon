@@ -9,6 +9,15 @@
     .messages-screen-container {
         width: 100%;
     }
+
+    .messages-screen-container .contact-side-bar-container {
+        display: none;
+    }
+
+    .messages-screen-chat-content {
+        display: flex;
+        width: 100%;
+    }
 }
 
 .messages-screen-chat-content {
