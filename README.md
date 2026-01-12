@@ -73,10 +73,10 @@ Aplicar estilos complejos con CSS
 
 Simular comportamiento real de una app de chat
 
-👤 Autor
+👤 Autor:   
 Esteban Mutuverria
 📍 Argentina
 💻 Técnico Universitario en Programación
 
-📄 Licencia
+📄 Licencia:
 Este proyecto se publica con fines educativos y de práctica.
